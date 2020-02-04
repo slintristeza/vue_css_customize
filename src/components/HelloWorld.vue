@@ -89,6 +89,7 @@
 
         <v-layout justify-center>
           <v-btn class="ma-2" tile color="indigo" dark>Tile Button</v-btn>
+          <CustomButton/>
         </v-layout>
       </v-flex>
     </v-layout>
@@ -96,8 +97,13 @@
 </template>
 
 <script>
+import CustomButton from './CustomButton';
 export default {
   name: 'HelloWorld',
+
+  components: {
+    CustomButton,
+  },
 
   data: () => ({
     ecosystem: [
