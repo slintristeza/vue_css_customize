@@ -92,17 +92,32 @@
           <CustomButton/>
         </v-layout>
       </v-flex>
+      <v-flex
+        xs12
+        mb-5
+      >
+        <h2 class="headline font-weight-bold mb-3">Select</h2>
+
+        <v-layout justify-center>
+          <CustomSelect v-bind:items="[1,2,3]" v-bind:selected="1"/>
+        </v-layout>
+        <v-layout justify-center>
+          <CustomSelect v-bind:items="['hoge','fuga','piyo']" v-bind:selected="'hoge'"/>
+        </v-layout>
+      </v-flex>
     </v-layout>
   </v-container>
 </template>
 
 <script>
 import CustomButton from './CustomButton';
+import CustomSelect from './CustomSelect';
 export default {
   name: 'HelloWorld',
 
   components: {
     CustomButton,
+    CustomSelect,
   },
 
   data: () => ({
