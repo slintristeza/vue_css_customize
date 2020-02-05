@@ -104,10 +104,20 @@
         <v-layout justify-center>
           <CustomSelect v-bind:items="['hoge','fuga','piyo']" v-bind:selected="'hoge'"/>
         </v-layout>
+        <v-layout justify-center>
+          <v-col class="width-style">
+            <v-select>----</v-select>
+            <v-select>----</v-select>
+          </v-col>
+        </v-layout>
       </v-flex>
     </v-layout>
   </v-container>
 </template>
+
+<style scoped>
+@import './sample.css';
+</style>
 
 <script>
 import CustomButton from './CustomButton';
